@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat Box</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+  <ul class="pages">
+    <li class="chat page">
+      <div class="chatArea">
+        <ul class="messages"></ul>
+      </div>
+      <input class="inputMessage" placeholder="Type here..."/>
+      <span class="sendme"><i id="myButtons" class="fas fa-paper-plane"></i></span>
+    </li>
+    <li class="login page">
+      <div class="header">
+        <h1 class="main-header">
+          Chat Box
+        </h1>
+      </div>
+      <div class="form">
+        <h3 class="title">What's Your Nickname?</h3>
+        <input class="usernameInput" id="myInput" type="text" maxlength="14" />
+        <button id="myButton">Submit</button>
+      </div>
+      <div class="footer">
+        <h1 class="main-footer"> 
+          Made<br><span class="rightjaa">By</span> <br> <span class="name" style="font-family: 'Lobster', cursive;">Chirag</span>
+        </h1>
+      </div>
+    </li>
+  </ul>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+/* Fix user-agent */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+html, input {
+  font-family:
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    "Lucida Grande",
+    sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  word-wrap: break-word;
+}
+
+/* Pages */
+
+.pages {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.page {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+/* Login Page */
+
+.login.page {
+  background-color: #000;
+}
+
+.login.page .form {
+  height: 100px;
+  margin-top: -100px;
+  position: absolute;
+
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+
+.login.page .form .usernameInput {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 50vw;
+}
+#myButton{
+  width: 20vw;
+    height: 4vh;
+    border-radius: 2vw;
+    font-size: 4vw;
+    padding: 1vw;
+    background-color: springgreen;
+    border: none;
+}
+
+.login.page .title {
+  font-size: 6vw;
+}
+
+.login.page .usernameInput {
+  font-size: 6vw;
+  letter-spacing: 3px;
+}
+
+.login.page .title, .login.page .usernameInput {
+  color: #fff;
+  font-weight: 100;
+}
+
+/* Chat page */
+
+.chat.page {
+  display: none;
+}
+
+/* Font */
+
+.messages {
+  font-size: 3vw;
+}
+
+.inputMessage {
+  font-size: 4vw;
+  padding-left: 3vw;
+}
+
+.log {
+  color: white;
+  font-size: 60%;
+  margin: 5px;
+  text-align: center;
+  font-size: 3vw;
+}
+
+/* Messages */
+
+.chatArea {
+  height: 103vh;
+  padding-bottom: 70px;
+  background-image: url('https://wallpaperaccess.com/full/1288076.jpg');
+  position: relative;
+  margin-top: -3vh;
+}
+
+.messages {
+  height: 93vh;
+  margin: 0;
+  overflow-y: scroll;
+  padding: 10px 20px 10px 20px;
+}
+
+.message.typing .messageBody {
+  color: gray;
+}
+
+.username {
+  font-weight: 700;
+  overflow: hidden;
+  padding-right: 15px;
+  text-align: right;
+}
+
+/* Input */
+
+.inputMessage {
+  border: 10px solid grey;
+  bottom: 1vw;
+  height: 5vh;
+  left: 0;
+  outline: none;
+  position: absolute;
+  left: 1vw;
+  width: 90vw;
+  border-radius: 5vw;
+  padding: 4vw;
+}
+
+.header{
+  margin: auto;
+  /* margin-left: 8vw; */
+  margin-top: 6vh;
+  width: 90vw;
+}
+.main-header{
+  color: wheat;
+  /* margin: auto; */
+  font-size: 9vh;
+  margin: auto;
+  padding: 1vh;
+}
+.footer{
+  color: white;
+}
+.main-footer{
+  position: fixed;
+  bottom: 12vh;
+  font-size: 5vw;
+  right: 16vw;
+}
+
+.rightjaa{
+  margin-left: 6.5vw;
+}
+
+.name{
+  font-family: 'Lobster', cursive;
+    font-size: 6vw;
+    /* text-decoration: underline red; */
+    padding-bottom: 0.2vw;
+    border-bottom: 0.7vw solid springgreen;
+}
+
+.sendme{
+  position: absolute;
+    bottom: 2.5vw;
+    right: 2vw;
+    font-size: 6vw;
+    width: 6vw;
+}
+
+
+
+
+@media only screen and (width: 800px){
+    body{
+      display: none;
+    }
+}
+
+
+@media (min-height: 350px)  {
+  #myButton{
+    height: 9vh;
+  }
+  .main-footer{
+    margin-bottom: -9vh;
+    position: absolute;
+    right: 6vw;
+    
+}
+  .usernameInput {
+    height: 9vh;
+ }
+  .main-header{
+    font-size: 7vh;
+    font-family: cursive;
+    color: springgreen;
+    text-align: center;
+    margin-top: 12vh;
+  }
+  .rightjaa{
+    font-size: 4vh;
+  }
+  .username{
+    font-size: 6vh;
+  }
+  .messageBody{
+    font-size: 4vh;
+  }
+  .log{
+    font-size: 4vh;
+    color: white;
+    position: relative;
+    margin-top: 3vh;
+  }
+ 
+.messages{
+  color: white;
+}
+#myButtons{
+  color: white;
+}
+.message{
+  color: white;
+ 
+}
+ }
+

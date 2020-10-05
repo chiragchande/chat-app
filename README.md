@@ -1,2 +1,7 @@
-# chat-app
-made with nodejs for practice purpose
+
+To run the application:
+
+```
+$ npm install
+$ npm start
+```
